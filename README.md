@@ -28,7 +28,7 @@ HTML,CSS,JAVASCRIPT
 ---
 
 ## 🖼 Live Preview  
-🔗 [View My Portfolio](https://github.com/mushkaan0205/Mushkaan Portfolio/)  
+[View My Portfolio](https://mushkaan0205.github.io/Portfolio/)  
 
 
 
