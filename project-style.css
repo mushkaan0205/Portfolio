@@ -1,0 +1,160 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1f1f1f;
+    --text-color: #ffffff;
+    --accent: #00ffcc;
+    --accent-glow: rgba(0, 255, 204, 0.5);
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.project-gallery {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.project-gallery h2 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 40px;
+}
+
+/* Image Cards Grid */
+.project-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-image-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-image-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-image-card p {
+    padding: 15px;
+    font-size: 0.95rem;
+    color: #ccc;
+    background-color: #1a1a1a;
+}
+
+/* Project Description & GitHub Link */
+.project-description {
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+}
+
+.project-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #00e6b8;
+}
+
+/* GitHub Stats */
+.github-stats {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Back Button */
+.back-home {
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+/* Lightbox Styling */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid var(--accent);
+    border-radius: 12px;
+    box-shadow: 0 0 30px var(--accent-glow);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image-card {
+        width: 90%;
+    }
+
+    .project-description {
+        padding: 15px;
+    }
+}

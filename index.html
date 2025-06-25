@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushkaan Portfolio</title>
+    <!-- link to fontawesome for inserting social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Mushkaan</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to my portfolio</h1>
+            <p>Building digital experiences that merge creativity with technology</p>
+            <p class="highlight">Specializing in modern web development and AI tools</p>
+            <a href="#contact" class="cta-button">Let's Connect</a>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Profile" class="profile-img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About</h2>
+                <p>
+                    I m Mushkaan Mohanta, a passionate and driven final-year B.Tech student specializing in Computer Science and Engineering with a focus on Artificial Intelligence at GIFT AUTONOMOUS college. My journey in tech has been all about exploring the power of intelligent systems and real-world applications. I m particularly enthusiastic about web development and love building scalable, smart applications using Python and the Django framework. I m always eager to learn, grow, and be part of meaningful, innovative projects that blend creativity with technology.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Python, Django</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Soft skills</h3>
+                <p>Problem-solving, Teamwork, Leadership, Time management, Critical thinking</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="timeline-wrapper">
+        <div class="timeline-block">
+        <div class="marker"><i class="fas fa-school"></i></div>
+        <div class="timeline-content">
+            <h3>10th - Secondary Education</h3>
+            <span>June 2019 – June 2020</span>
+            <p>Completed secondary education with a strong academic foundation.</p>
+        </div>
+        </div>
+        <div class="timeline-block">
+        <div class="marker"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+            <h3>12th - Higher Secondary</h3>
+            <span>June 2021 – June 2022</span>
+            <p>Completed 12th grade with focus on PCM stream.</p>
+        </div>
+        </div>
+        <div class="timeline-block">
+        <div class="marker"><i class="fas fa-university"></i></div>
+        <div class="timeline-content">
+            <h3>B.Tech - CSE (AI)</h3>
+            <span>Dec 2022 – June 2026</span>
+            <p>Currently pursuing B.Tech in Computer Science and Artificial Intelligence at GIFT Autonomous College.</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Resume Download -->
+    <div class="resume-download">
+        <a href="mushkaancv.pdf" target="_blank" class="download-button">
+        <i class="fas fa-file-download"></i> Download Resume (PDF)
+        </a>
+    </div>
+    </section>
+
+
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <div class="projects-text">
+                <h2>Projects</h2>
+                <p>
+                Explore my hands-on projects where I applied AI concepts, web development, and backend integration. One such project is an <strong>ATM Machine Simulator</strong> built using Python's Tkinter, simulating core banking features with GUI and MySQL database integration.
+                </p>
+                <div class="project-actions">
+                  <label>
+                    <input type="checkbox" id="viewProjects" onclick="redirectToProjects()"> View Project Gallery
+                  </label>
+                  <br><br>
+                  <a href="https://github.com/mushkaan0205/ATM-simulation-using-Tkinter-" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>GitHub
+                  </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    <h3 style="color: rgb(211, 208, 208);">Get in Touch</h3>
+    <h2 class="section-subheading">Contact</h2>
+    <div class="contact-container">
+        <!-- Left Info Panel -->
+        <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> mushkaan2022@gift.edu.in</p>
+        <p><i class="fas fa-phone"></i> +91 23457 88888</p>
+        <p><i class="fas fa-map-marker-alt"></i> GIFT Autonomous College, India</p>
+        <p>
+        <a href="https://github.com/mushkaan0205" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+        </a>
+        </p>
+        <p>
+        <a href="https://www.linkedin.com/in/mushkaanmohanta/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        </p>
+        </div>
+
+        <!-- Right Form Panel -->
+        <form class="contact-form" onsubmit="return false">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Write your message here..." rows="6" required></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mushkaan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          
+        </div>
+    </footer>
+
+    <!-- link to javascript file -->
+     <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Project Gallery - CyberPortfolio</title>
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+    <section class="project-gallery">
+        <h2>ATM Machine Simulator</h2>
+
+        <!-- Image Grid -->
+        <div class="project-gallery-container">
+            <div class="project-image-card">
+                <img src="user.png" alt="User" onclick="openLightbox(this)">
+                <p>This is the initial login screen where the user must:<br>
+                    ✏️Select a card from the dropdown list.<br>
+                    ✏️Click Proceed to continue to the login or dashboard.<br>
+                    It's the entry point simulating card insertion in an ATM.</p>
+            </div>
+            <div class="project-image-card">
+                <img src="dashboard.png" alt="ATM Dashboard" onclick="openLightbox(this)">
+                <p>This is the main dashboard screen after logging in. It shows:<br>
+                    ✏️A top navigation bar with buttons: Withdraw, Deposit, Change PIN, PDF (statement), Graph, ChatBot, and Exit.</p>
+            </div>
+            <div class="project-image-card">
+                <img src="graph.png" alt="ATM Withdraw" onclick="openLightbox(this)">
+                <p>This screen shows the graphical analysis of spending:<br>
+                    ✏️A bar chart comparing total Deposits vs Withdrawals.</p>
+            </div>
+            <div class="project-image-card">
+                <img src="transaction.png" alt="Transaction" onclick="openLightbox(this)">
+                <p>The transaction view displays updated balance ₹6066 along with:<br>
+                    ✏️A deposit of ₹4522.<br>
+                    ✏️A withdrawal of ₹1456.<br>
+                    This shows that the system tracks and displays recent activities clearly.</p>
+            </div>
+        </div>
+
+        <!-- GitHub Stats and Description -->
+        <div class="project-description">
+            <p>
+                The <strong>ATM Machine Simulator</strong> is a GUI banking app using Python’s Tkinter with MySQL for backend storage. It features real-time account operations, secure login, and a polished user interface.
+            </p>
+            <a href="https://github.com/mushkaan0205/ATM-simulation-using-Tkinter-" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View GitHub Repository
+            </a>
+            <p class="github-stats">⭐ Stars: <span id="stars">--</span> | 🍴 Forks: <span id="forks">--</span></p>
+            <br>
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Preview">
+    </div>
+
+<!-- External JavaScript -->
+<script src="project-script.js"></script>
+
+
+</body>
+</html>
